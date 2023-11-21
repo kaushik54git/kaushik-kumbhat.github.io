@@ -7,15 +7,12 @@ function toggleMenu() {
 
 var videos = document.querySelectorAll(".myVideo");
 
-function playVideo() {
-  videos.forEach(function(video){
-    video.play();
-  });
+function playVideo(video) {
+  video.play();
 }
 
-function stopVideo() {
-  videos.forEach(function(video){
-    video.pause();
-    video.currentTime = 0;
-  });
+function stopVideo(video) {
+  video.pause();
+  video.currentTime = 0;
 }
+
