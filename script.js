@@ -5,13 +5,17 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-var video = document.getElementById("myVideo");
+var videos = document.querySelectorAll(".myVideo");
 
-    function playVideo() {
-      video.play();
-    }
+function playVideo() {
+  videos.forEach(function(video){
+    video.play();
+  });
+}
 
-    function stopVideo() {
-      video.pause();
-      video.currentTime = 0;
-    }
+function stopVideo() {
+  videos.forEach(function(video){
+    video.pause();
+    video.currentTime = 0;
+  });
+}
